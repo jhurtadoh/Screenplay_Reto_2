@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Registro de empleado en la página OrangeHRM Demo" skipped="0" tests="1" time="27.88" timestamp="2018-10-28 07:50:42"><testcase name="Realizar registro en la página"><failure message="The following error occurred: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled</failure><system-err>The following error occurred: Expected enabled element was not enabled&#13;
+co.com.proyectobase.screenplay.tasks.Registrar.performAs(Registrar.java:32)&#13;
+co.com.proyectobase.screenplay.stepdefinitions.OrangeHrmDemoStepDefinition.elRealizaElIngresoDelRegistroEnLaAplicación(OrangeHrmDemoStepDefinition.java:37)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+co.com.proyectobase.screenplay.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:57)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+</system-err></testcase></testsuite>
