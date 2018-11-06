@@ -111,7 +111,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-10-2018 19:50</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-11-2018 20:59</span>
     <br style="clear:left"/>
 </div>
 
@@ -154,9 +154,9 @@ Para realizar el registro de un empleado en la página
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Realizar registro en la p&aacute;gina
+                                <span class="error-color">Realizar registro en la p&aacute;gina
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -179,8 +179,8 @@ Para realizar el registro de un empleado en la página
     <div id="contenttilttle">
             <div class="screenshotFailure panel panel-danger">
 
-                        <div class="panel-heading title="Element should be enabled exception: The following error occurred: Expected enabled element was not enabled">
-                            Element should be enabled exception: The following error occurred: Expected enabled element was not enabled
+                        <div class="panel-heading title="No such element exception: The following error occurred: no such element: Unable to locate element: {'method':'xpath','selector':'//*[@id='select-options-2bd56d48-f1cf-9650-1331-be2cef4f62a3']'}  (Session info: chrome=70.0.3538.77)  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'DESKTOP-MQJ0GMU', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'Driver info: org.openqa.selenium.remote.RemoteWebDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\johan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}Session ID: 2e2f62de526f75dd7c6de6244f2d070b*** Element info: {Using=xpath, value=//*[@id='select-options-2bd56d48-f1cf-9650-1331-be2cef4f62a3']}">
+                            No such element exception: The following error occurred: no such element: Unable to locate element: {'method':'xpath','selector':'//*[@id='select-options-2bd56d48-f1cf-9650-1331-be2cef4f62a3']'}  (Session info: chrome=70.0.3538.77)  (Driver ...
                         </div>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger" data-toggle="modal"
@@ -198,15 +198,17 @@ Para realizar el registro de un empleado en la página
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                    net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException
+                                    org.openqa.selenium.NoSuchElementException
                                 </h4>
                             </div>
                             <div class="modal-body">
                                     <h5>
-                                        <pre>The following error occurred: Expected enabled element was not enabled</pre>
+                                        <pre>The following error occurred: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;select-options-2bd56d48-f1cf-9650-1331-be2cef4f62a3&quot;]&quot;}<br>  (Session info: chrome=70.0.3538.77)<br>  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 0 milliseconds<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'<br>System info: host: 'DESKTOP-MQJ0GMU', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'<br>Driver info: org.openqa.selenium.remote.RemoteWebDriver<br>Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\johan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}<br>Session ID: 2e2f62de526f75dd7c6de6244f2d070b<br>*** Element info: {Using=xpath, value=//*[@id=&quot;select-options-2bd56d48-f1cf-9650-1331-be2cef4f62a3&quot;]}</pre>
                                     </h5>
+                                    co.com.proyectobase.screenplay.interactions.Seleccionar.performAs(Seleccionar.java
+                                    :22) <br>
                                     co.com.proyectobase.screenplay.tasks.Registrar.performAs(Registrar.java
-                                    :32) <br>
+                                    :42) <br>
                                     co.com.proyectobase.screenplay.stepdefinitions.OrangeHrmDemoStepDefinition.elRealizaElIngresoDelRegistroEnLaAplicación(OrangeHrmDemoStepDefinition.java
                                     :37) <br>
                                     cucumber.runner.Runner.runPickle(Runner.java
@@ -227,30 +229,6 @@ Para realizar el registro de un empleado en la página
                                     :206) <br>
                             </div>
 
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                            aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <h4 class="modal-title" id="stacktraceModalLabel">
-                                        Caused by: org.openqa.selenium.TimeoutException
-                                    </h4>
-                                </div>
-                                <div class="modal-body">
-                                        <pre>Expected condition failed: waiting for By.xpath: //*[@id=&quot;firstName&quot;] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                                    <pre>
-                                        co.com.proyectobase.screenplay.tasks.Registrar.performAs(Registrar.java :32) <br>
-                                        co.com.proyectobase.screenplay.stepdefinitions.OrangeHrmDemoStepDefinition.elRealizaElIngresoDelRegistroEnLaAplicación(OrangeHrmDemoStepDefinition.java :37) <br>
-                                        cucumber.runner.Runner.runPickle(Runner.java :80) <br>
-                                        co.com.proyectobase.screenplay.runners.RunnerPersonalizado.run(RunnerPersonalizado.java :57) <br>
-                                        org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :86) <br>
-                                        org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :38) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :538) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :760) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :460) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :206) <br>
-                                    </pre>
-                                </div>
-
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
                                     Close
@@ -262,17 +240,23 @@ Para realizar el registro de un empleado en la página
 
 
                 <div class="panel-body">
-                    <a href="pagesource6949825731017054932.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource4081490594506537303.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="2ae1f522b57182793d93edd7bd85b78ed758de3f483713c5ffeb9c2e67589cd9.png" title="Given que Johan necesita crear un empleado en la p&aacute;gina OrageHRM Demo" width="1366"/>
+                <img src="3af782ecbfefdbdb10d5a481c92cb72b5fa279baa868b74e354e77ff5087c10a.png" title="Given que Johan necesita crear un empleado en la p&aacute;gina OrageHRM Demo" width="1366"/>
                 <img src="d29cff68ccd48261ef5986981e914c34c0a2e3da26e151f78993a5794e76f5e7.png" title="Johan opens the Orange hrm demo page" width="1366"/>
-                <img src="3a1e5efc9ad3b3009719937e7464e2ce15c42244be1d50fed3acc6d60e138822.png" title="Johan clicks on Button para realizar  logueo" width="1366"/>
-                <img src="99e716260dc93b4d6fdb7df1ed0d6592f0aea759d5f36af84a81ce70f7fca96e.png" title="Johan clicks on Men&uacute; del m&oacute;dulo de informaci&oacute;n personal" width="1366"/>
-                <img src="557c1bd67f892e7d6fa0f69eab2fb61b09c8b702d1e852238f1d225b73f5c88b.png" title="Johan clicks on Men&uacute; del m&oacute;dulo de informaci&oacute;n personal" width="1366"/>
-                <img src="52626e705981f9cbecd2658ade90ed76d12bd2570d28c71be0e07a104e77b070.png" title="Johan enters 'germ&aacute;n' into TextBox donde se digita el primer nombre: <span class='failing-color'>FAILURE</span>" width="1366"/>
+                <img src="61dfa661ed3fd2b4b316edd88fbe7d5b30a313f3e925b50b613d9075c88d5a83.png" title="Johan clicks on Button para realizar  logueo" width="1366"/>
+                <img src="3e740c28e021264c084d66eb6465fb8336de0c632ffdd3f928ec07fc86710b56.png" title="When el realiza el ingreso del registro en la aplicaci&oacute;n
+| firstName | middleName | lastName | location |
+| germ&aacute;n | ezequiel | cano | German Regional HQ |" width="1366"/>
+                <img src="1ce74973a5b88237ad56e4006ada37751c7fffd4abd0dcc9e908b4c54fd3fb3c.png" title="Johan clicks on Men&uacute; del m&oacute;dulo de informaci&oacute;n personal" width="1366"/>
+                <img src="4bbbf47be35df724db84bb97b0ad637d5819d4e7fbe389446a6efa316a36f6a4.png" title="Johan clicks on Men&uacute; del m&oacute;dulo de informaci&oacute;n personal" width="1366"/>
+                <img src="1a66403ad5441a11bc331595c19cc65891ec63ebff086e31c68348a5a8d98e19.png" title="Johan enters 'germ&aacute;n' into TextBox donde se digita el primer nombre" width="1366"/>
+                <img src="aa5898e690f4e4536ab837830a64ed54009b2bd3997c00c8382bbdf3fe8c88bf.png" title="Johan enters 'ezequiel' into TextBox donde se digita el segundo nombre" width="1366"/>
+                <img src="363520c85053f07901b3a0537fca8e948f0a7a6c92fa5dad3545aeb81f0bf7fe.png" title="Johan enters 'cano' into TextBox donde se digita el apellido" width="1366"/>
+                <img src="386a64cbf89d5816826e009e0f318bef0c29ac1293aa3cdfd925458728853f4d.png" title="Johan clicks on Combobox de lugares: <span class='error-color'>ERROR</span>" width="1366"/>
             </div>
         </div>
 
