@@ -25,20 +25,40 @@ public class OrangeHrmDemoPage extends PageObject {
 	public static final Target TEXTBOX_LAST_NAME = Target.the("TextBox donde se digita "
 			+ "el apellido").located(By.xpath("//*[@id=\"lastName\"]" ));
 	public static final Target COMBOBOX_LOCATION = Target.the("Combobox "
-			+ "de lugares").located(By.xpath("//*[@id=\"location_inputfileddiv\"]/div/input"));
-	public static final Target SELECTCOMBOBOX_LOCATION = Target.the("seleccionar "
-			+ "lugar").located(By.xpath("//*[@id=\"select-options-2bd56d48-f1cf-9650-1331-be2cef4f62a3\"]"));
-	public static final Target BUTTON_NEXT = Target.the("Button para avanzar a la pantalla "
-			+ "de datos personales importantes").located(By.xpath("//*[@id=\"systemUserSaveBtn\"]"));
+			+ "de lugares").located(By.id("location_inputfileddiv"));
+	public static final Target BUTTON_NEXT = Target.the("Button para pasar a la pantalla "
+			+ "de datos importantes").located(By.id("systemUserSaveBtn"));
 	
-	public static final Target WINDOW_ADD_EMPLOYEE = Target.the("ventana "
-			+ "para añadir empleado").located(By.xpath("//*[@id=\"addEmployeeModal\"]/h4"));	
+	public static final Target BUTTON_NEXT_2 = Target.the("Button para avanzar a la segunda pantalla "
+			+ "de datos personales importantes").located(By.xpath("//*[@id=\"content\"]/div[2]/ui-view/div[2]/div/div[3]/button[2]"));
+	public static final Target BUTTON_NEXT_3 = Target.the("Button para avanzar a la tercera pantalla "
+			+ "de datos personales importantes").located(By.xpath("//*[@id=\"content\"]/div[2]/ui-view/div[2]/div/div[3]/button[2]"));
+	
+	public static final Target COMBOBOX_REGION = Target.the("Combobox "
+			+ "de regiones").located(By.id("WizardFieldDefinition9_inputfileddiv"));
+	public static final Target COMBOBOX_FTE = Target.the("Combobox "
+			+ "de FTE").located(By.id("WizardFieldDefinition10_inputfileddiv"));
+	public static final Target COMBOBOX_TEMPORARY_DEPARTMENT = Target.the("Combobox "
+			+ "de Temporary Department").located(By.id("WizardFieldDefinition11_inputfileddiv"));	
+	public static final Target BUTTON_NEXT_4 = Target.the("Button para avanzar a la cuarta pantalla "
+			+ "de datos personales importantes").located(By.xpath("//*[@id=\"content\"]/div[2]/ui-view/div[2]/div/div[3]/button[2]"));
+	
+	
+	public static final Target BUTTON_NEXT_5 = Target.the("Button para avanzar a la quinta pantalla "
+			+ "de datos personales importantes").located(By.xpath("//*[@id=\"content\"]/div[2]/ui-view/div[2]/div/div[3]/button[2]"));
+	public static final Target BUTTON_NEXT_6 = Target.the("Button para avanzar a la sexta pantalla "
+			+ "de datos personales importantes").located(By.xpath("//*[@id=\"content\"]/div[2]/ui-view/div[2]/div/div[3]/button[2]"));
+	public static final Target BUTTON_SAVE = Target.the("Button para "
+			+ "grabar").located(By.xpath("//*[@id=\"content\"]/div[2]/ui-view/div[2]/div/div[3]/button[3]"));
+	
+	public static final Target COMBOBOX_BLOOD_GROUP = Target.the("Combobox "
+			+ "de grupo sanguíneo").located(By.id("1_inputfileddiv"));	
+	public static final Target TEXTBOX_HOBBIES = Target.the("TextBox donde se digitan "
+			+ "los hobbies").located(By.id("5"));
+	public static final Target BUTTON_SAVE_2 = Target.the("Button para "
+			+ "grabar").located(By.xpath("//*[@id=\"pimPersonalDetailsForm\"]/materializecss-decorator[8]/div/sf-decorator[2]/div/button"));
 	
 	
 	
 	
-	
-	
-	
-
 }

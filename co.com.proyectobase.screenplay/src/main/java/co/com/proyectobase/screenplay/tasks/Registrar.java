@@ -10,7 +10,6 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
 public class Registrar implements Task{
 
@@ -39,9 +38,35 @@ public class Registrar implements Task{
 		actor.attemptsTo(Enter.theValue(data.get(0).getMiddleName()).into(OrangeHrmDemoPage.TEXTBOX_MIDDLE_NAME));
 		actor.attemptsTo(Enter.theValue(data.get(0).getLastName()).into(OrangeHrmDemoPage.TEXTBOX_LAST_NAME));
 		actor.attemptsTo(Click.on(OrangeHrmDemoPage.COMBOBOX_LOCATION));
-		actor.attemptsTo(Seleccionar.laLista(OrangeHrmDemoPage.SELECTCOMBOBOX_LOCATION,data.get(0).getLocation()));
+		actor.attemptsTo(Seleccionar.laLista(OrangeHrmDemoPage.COMBOBOX_LOCATION,data.get(0).getLocation()));
 		actor.attemptsTo(Click.on(OrangeHrmDemoPage.BUTTON_NEXT));
 		
+		actor.attemptsTo(TiempoDeEspera.Pausa(15000));	
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.BUTTON_NEXT_2));
+		actor.attemptsTo(TiempoDeEspera.Pausa(5000));
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.BUTTON_NEXT_3));
+		
+		actor.attemptsTo(TiempoDeEspera.Pausa(5000));		
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.COMBOBOX_REGION));
+		actor.attemptsTo(Seleccionar.laLista(OrangeHrmDemoPage.COMBOBOX_REGION,data.get(0).getRegion()));
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.COMBOBOX_FTE));
+		actor.attemptsTo(Seleccionar.laLista(OrangeHrmDemoPage.COMBOBOX_FTE,data.get(0).getFte()));
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.COMBOBOX_TEMPORARY_DEPARTMENT));
+		actor.attemptsTo(Seleccionar.laLista(OrangeHrmDemoPage.COMBOBOX_TEMPORARY_DEPARTMENT,data.get(0).getTemporaryDepartment()));
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.BUTTON_NEXT_4));
+		
+		actor.attemptsTo(TiempoDeEspera.Pausa(5000));
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.BUTTON_NEXT_5));
+		actor.attemptsTo(TiempoDeEspera.Pausa(5000));
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.BUTTON_NEXT_6));
+		actor.attemptsTo(TiempoDeEspera.Pausa(5000));
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.BUTTON_SAVE));
+		
+		actor.attemptsTo(TiempoDeEspera.Pausa(5000));
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.COMBOBOX_BLOOD_GROUP));
+		actor.attemptsTo(Seleccionar.laLista(OrangeHrmDemoPage.COMBOBOX_BLOOD_GROUP,data.get(0).getBloodGroup()));
+		actor.attemptsTo(Enter.theValue(data.get(0).getHobbies()).into(OrangeHrmDemoPage.TEXTBOX_HOBBIES));
+		actor.attemptsTo(Click.on(OrangeHrmDemoPage.BUTTON_SAVE_2));
 	}
 	
 	public static Registrar EmpleadoEnLaPagina(List<InformacionEmpleado> dato) {
