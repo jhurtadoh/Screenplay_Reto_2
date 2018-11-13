@@ -58,7 +58,16 @@ public class OrangeHrmDemoPage extends PageObject {
 	public static final Target BUTTON_SAVE_2 = Target.the("Button para "
 			+ "grabar").located(By.xpath("//*[@id=\"pimPersonalDetailsForm\"]/materializecss-decorator[8]/div/sf-decorator[2]/div/button"));
 	
+	public static final Target LABEL_EMPLOYEE_NAME = Target.the("Label que contiene "
+			+ "el nombre del empleado").located(By.id("pim.navbar.employeeName"));	
+//	public static final Target MENU_EMPLOYEE_LIST = Target.the("Menú del módulo "
+//			+ "de listado de empleados").located(By.id("menu_pim_viewEmployeeList"));	
+//	public static final Target BUTTON_SEARCH = Target.the("Button para "
+//			+ "buscar").located(By.id("quick_search_icon"));
+//	public static final Target FILTER_EMPLOYEE_NAME = Target.the("filtro para "
+//			+ "buscar empleado").located(By.id("employee_name_quick_filter_employee_list_value"));
 	
-	
+
 	
 }
+

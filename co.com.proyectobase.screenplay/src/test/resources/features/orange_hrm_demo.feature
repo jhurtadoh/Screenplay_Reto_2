@@ -11,7 +11,7 @@ Feature: Registro de empleado en la página OrangeHRM Demo
     When el realiza el ingreso del registro en la aplicación
     |firstName|middleName|lastName|location|region|fte|temporaryDepartment|bloodGroup|hobbies|
  		|<firstName>|<middleName>|<lastName>|<location>|<region>|<fte>|<temporaryDepartment>|<bloodGroup>|<hobbies>|
-    Then el visualiza el nuevo empleado en el aplicativo
+    Then el visualiza el nuevo empleado <firstName> <lastName> en el aplicativo
     Examples:
     |firstName|middleName|lastName|location|region|fte|temporaryDepartment|bloodGroup|hobbies|
     ##@externaldata@./src/test/resources/datadriven/dtDatos.xlsx@Datos
